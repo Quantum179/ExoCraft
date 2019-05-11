@@ -1,9 +1,9 @@
 # ExoCraft
-Logiciel d'édition de site web avec gestion de contenu.
+Editeur de site web avec gestion de contenu.
 
 # Introduction
 
-ExoCraft est un logiciel d'édition orienté cloud qui se base sur TerraformUI et Redux. Les utilisateurs auront accès à des templates régulier ou premium de la doc TerraUI ou bien partir sur des customisations.
+ExoCraft est un éditeur orienté cloud qui se base sur TerraformUI et Redux. Les utilisateurs auront accès à des templates régulier ou premium de la doc TerraUI ou bien partir sur des customisations.
 
 # Fonctionnalités
 
