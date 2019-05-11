@@ -1,0 +1,35 @@
+#main {
+  width:1000px;
+  height:2500px;
+  border: 1px solid black;
+  margin:auto;
+}
+
+.block {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column
+}
+.flex-item {
+
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+}
+.grid-item {
+  
+}
+

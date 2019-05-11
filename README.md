@@ -29,7 +29,7 @@ ExoCraft est un logiciel d'édition orienté cloud qui se base sur TerraformUI e
 - Recherches sur la gestion d'état : quelles sont les alternatives de Redux ? A quel point une approche maison serait plus "ExoSoft Friendly" ?
 - Proposer les guides de design et les chartes graphiques de TerraForm. Les utilisateurs pourront être conseillés tout en ayant une totale liberté de création.
 - Penser maintenabilité et évolutivité : ExoCraft doit évoluer main dans la main avec TerraForm. Trouver le moyen de facilement effectuer des mises à jour dans l'appli et les projets des utilisateurs (les composants doivent pouvoir se mettre à jour depuis l'API tout en gardant les paramètres des utilisateurs)
-
+- Faire de profondes recherches sur les events listeners (pour remplacer le onclick d'un button par exemple : https://stackoverflow.com/questions/9643311/pass-string-parameter-in-an-onclick-function)
 # Community Version
 
 Version gratuite qui permet de concevoir son site en un éclair (tutorial inclus). Les utilisateurs pourront publier leurs créations sur les serveurs internes de ExoCraft (et ExoSoft) mais devoir s'abonner pour une mise en ligne plus élaborée. La version Community offre un large champ d'accès pour les habitués du WYSIWYG (What You See Is What You Get). La version Alpha contiendra 1 template de test.

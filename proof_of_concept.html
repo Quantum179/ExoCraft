@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>HTML Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div class="flex-container">
+        <button onclick="addBlock()">Add block</button> 
+        <button onclick="changeDisplay('flex')">Flex</button>
+        <button onclick="changeDisplay('grid')">Grid</button>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+    </div>
+    <div id="main"></div>
+  </div>
+</body>
+<script>
+
+function test() {
+  alert("hey")
+}
+
+function addBlock(x, y, w, h) {
+  var para = document.createElement("p")
+  var text = document.createTextNode("Block")
+  para.appendChild(text)
+  var div = document.createElement("div")
+  div.appendChild(para)
+  div.classList.add("block")
+  var el = document.querySelectorAll('#main')[0]
+  el.appendChild(div);
+}
+
+function changeDisplay(val) {
+  var el = document.querySelectorAll('#main')[0]
+  el.classList.remove("flex-container", "grid-container")
+
+  if(val === "flex") {
+    el.classList.add("flex-container")
+  }
+  if(val === "grid") { 
+    el.classList.add("grid-container")
+  }
+}
+
+function changeColor(val) {
+  var el = document.querySelectorAll('#main')[0]
+  el.style.backgroundColor = val
+}
+</script>
+</html>
+
