@@ -24,12 +24,17 @@ ExoCraft est un éditeur orienté cloud qui se base sur TerraformUI et Redux. Le
 - Possibilité de customiser les composants avec du css et du dessin vectoriel : tout est converti en css dans la phrase de génération.
 
 # Développement / Todos
-
 - Réfléchir à une manière simple d'utiliser l'API pour concevoir des usines de blocs : comment uniformiser les données de l'API pour être compatible avec n'importe quel code javascript natif (quels sont les prérequis minimum pour utiliser ExoCraft ?)
 - Recherches sur la gestion d'état : quelles sont les alternatives de Redux ? A quel point une approche maison serait plus "ExoSoft Friendly" ?
 - Proposer les guides de design et les chartes graphiques de TerraForm. Les utilisateurs pourront être conseillés tout en ayant une totale liberté de création.
 - Penser maintenabilité et évolutivité : ExoCraft doit évoluer main dans la main avec TerraForm. Trouver le moyen de facilement effectuer des mises à jour dans l'appli et les projets des utilisateurs (les composants doivent pouvoir se mettre à jour depuis l'API tout en gardant les paramètres des utilisateurs)
 - Faire de profondes recherches sur les events listeners (pour remplacer le onclick d'un button par exemple : https://stackoverflow.com/questions/9643311/pass-string-parameter-in-an-onclick-function)
+
+# Links 
+- css grid tips : https://www.youtube.com/watch?v=7kVeCqQCxlk&t=1452s
+- web components : https://blog.ionicframework.com/build-your-next-design-system-with-web-components/amp/?__twitter_impression=true
+- css layout : http://book.mixu.net/css/5-tricks.html
+
 # Community Version
 
 Version gratuite qui permet de concevoir son site en un éclair (tutorial inclus). Les utilisateurs pourront publier leurs créations sur les serveurs internes de ExoCraft (et ExoSoft) mais devoir s'abonner pour une mise en ligne plus élaborée. La version Community offre un large champ d'accès pour les habitués du WYSIWYG (What You See Is What You Get). La version Alpha contiendra 1 template de test.

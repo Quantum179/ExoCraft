@@ -10,22 +10,28 @@
 # BlockFactory
 ## methods
   - public static BlockFactory getInstance()
-  - public Block createBlock(blockRef?, options?)
+  - public createBlock(blockRef?, options?) : Block
 # Editor
 ## attributes 
   - projet : Projet
   - currentPage
+  - (user)
 ## methods
   - private addPage(name, pageRef?)
   - private changePage(pageRef)
   - private addBlock(position, blockRef?, options?, parent?)
   - private moveBlock(blockRef)
+  - private resizeBlock(blocRef, position) -> blocRef.setPosition(position)
   - private saveBlock(block)
   - private changeDeviceView()
-  - private openThemeSettings() : void
-  - private previewProject()
+  - private openThemeSettings()
+  - private previewProject() : HTMLPage[]
+  - private loadProject() : Project
   - private saveProject()
-  - private virtual resizeBlock()
+# toolbar
+## attributes
+## methods
+  
 # Project
 ## attributes
   - pages : Page[]
@@ -34,6 +40,7 @@
 # Page (extends Grid)
   - title
   - height
+  - blocks : Block[]
 # Block
 ## attributes
   - position
@@ -42,8 +49,9 @@
     - y
     - width (w)
     - height (h)
-  - margin
-  - padding
+  - spacing
+    - margin
+    - padding
   - children : Block[]
   - theme : ItemThemeSettings
   - html (TODO)
@@ -52,9 +60,10 @@
     - rules
   - events : Event[]
 ## methods
-  - public Block? get(childRef)
+  - public addChild(blockRef)
+  - public getChild(index)
   - public setSpacing(marginRef?, paddingRef?)
-  - public setPosition(x, y, w, h, type)
+  - public virtual setPosition(positionRef)
 # Grid
 ## attributes
   - override(children : Block[]) => children : GridItem[]
@@ -68,6 +77,3 @@
   - public setAreas(Block[]?) : void
   - public saveDisplay() : void
   - public setGap(val) : void
-
-
-
