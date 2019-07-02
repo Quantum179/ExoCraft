@@ -14,6 +14,12 @@
     - color options
     - save project
   - (page background)
+  - change device
+# Navbar block (draft)
+  - add child
+  - resize
+  - change background
+  - change spacing
 
 # Components 
 ## block (global)

@@ -1,0 +1,3 @@
+# Notes
+- Il faut bien différencier les règles css qui concernent la classe virtuelle Block (redimensionner un block) et les règles qui s'appliquent selon la nature de l'enfant (grid-areas pour IGrid, flex pour IFlex, bgImage pour IImage, etc)
+- Les patrons GoF pourront énormément aidé la conception mais il ne faut pas tomber dans l'excès. Des recherches sont quand même à faire avant de se précipiter dans un code qui sera instable dans 6 mois.

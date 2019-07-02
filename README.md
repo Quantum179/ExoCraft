@@ -34,6 +34,8 @@ ExoCraft est un éditeur orienté cloud qui se base sur TerraformUI et Redux. Le
 - css grid tips : https://www.youtube.com/watch?v=7kVeCqQCxlk&t=1452s
 - web components : https://blog.ionicframework.com/build-your-next-design-system-with-web-components/amp/?__twitter_impression=true
 - css layout : http://book.mixu.net/css/5-tricks.html
+- https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/
+https://pixabay.com/images/search/galaxy/
 
 # Community Version
 

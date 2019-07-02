@@ -4,5 +4,5 @@ export default interface IPage {
   id: number
   title: string
   height: number
-  blocks: IBlock[] // todo : blocks ou seulement la grid initiale ?
+  blocks: IBlock[]
 }
