@@ -1,14 +1,11 @@
 import IStyle from "../IStyle"
 import IEvent from "../IEvent"
-import ISpacing from "../ISpacing"
 import IDimension from "../IDimension"
 
 export default interface IBlock {
   id: number
   children: IBlock[]
   dimension: IDimension
-  spacing: ISpacing
-  html: string
   css: IStyle // todo: utiliser les patrons de conception pour mieux définir le concept de thème et de scoped css
   events: IEvent[]
 

@@ -12,6 +12,20 @@
     <div class="flex-container">
         <button onclick="addBlock()">Add block</button> 
         <button onclick="changeDisplay('flex')">Flex</button>
+        <select onChange="modifyFlex.call(this, event)">
+          <option>direction;row</option>
+          <option>direction;column</option>
+          <option>justify;start</option>
+          <option>justify;center</option>
+          <option>justify;space-between</option>
+          <option>justify;space-around</option>
+          <option>justify;end</option>
+          <option>wrap;wrap</option>
+          <option>wrap;nowrap</option>
+          <option>align;start</option>
+          <option>align;center</option>
+          <option>align;end</option>
+        </select>
         <button onclick="changeDisplay('grid')">Grid</button>
         <button onclick="changeColor('red')">Red</button>
         <button onclick="changeColor('blue')">Blue</button>
@@ -33,6 +47,9 @@ function addBlock(x, y, w, h) {
   div.appendChild(para)
   div.classList.add("block")
   var el = document.querySelectorAll('#main')[0]
+  el.addEventListener('click', function (event) {
+    el.classList.add('selected-block')
+  });
   el.appendChild(div);
 }
 
@@ -48,9 +65,35 @@ function changeDisplay(val) {
   }
 }
 
+function modifyFlex(opt) {
+  const text = this.options[this.selectedIndex].text
+  const rule = text.split(";")[0]
+  const val = text.split(";")[1]
+  var el = document.querySelectorAll('#main')[0]
+
+  if(rule == "direction") {
+    el.style.flexDirection = val
+  }
+  if(rule == "wrap") {
+    el.style.flexWrap = val
+  }
+  if(rule == "justify") {
+    el.style.justifyContent = val
+  }
+  if(rule == "align") {
+    el.style.alignItems = val
+  }
+
+  console.log("done")
+}
+
 function changeColor(val) {
   var el = document.querySelectorAll('#main')[0]
   el.style.backgroundColor = val
+}
+
+function moveBlock(selector) {
+
 }
 </script>
 </html>

@@ -1,6 +1,8 @@
 export default interface IStyle {
   classes: IClass[]
   rules: CSSRule[]
+  margin: string
+  padding: string
 
   isValidRule: (rule: {}) => boolean // todo : déplacer au bon endroit dans l'application, méthode static 
   addRule: (rule: CSSRule) => void

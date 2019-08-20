@@ -33,3 +33,6 @@
   
 }
 
+.selected-block {
+  border: 3px solid black;
+}

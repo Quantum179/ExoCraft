@@ -1,8 +1,6 @@
 import IBlock from "./block/IBlock"
 
-export default interface IPage {
+export default interface IPage extends IBlock {
   id: number
   title: string
-  height: number
-  blocks: IBlock[]
 }

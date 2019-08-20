@@ -4,15 +4,15 @@ import IUser from "./IUser"
 import IBlock from "./block/IBlock"
 
 export default interface IEditor {
-  project: IProject
-  currentPage: IPage
-  currentUser: IUser
+  project: IProject | null
+  currentPage: IPage | null
   selectedBlock: IBlock | null
 
   loadProject: () => void // ouvre un dialog
   saveProject: () => void // ouvre un dialog
   previewProject: () => void
 
+  openPageSettings: () => void
   addPage: () => void // ouvre un dialog -> project.addPage(page) -> changePage(page)
   removePage: (page: IPage) => void // project.removePage(page)
   changePage: (page: IPage) => void // currentPage = page
@@ -21,8 +21,6 @@ export default interface IEditor {
   resizeBlock: (block: IBlock) => void //blocRef.setSize(position) 
   saveBlock: (block: IBlock) => void //sauvegarde le bloc dans la collection de l'utilisateur
 
-  changeDeviceView: (id: number) => void
-  openThemeSettings: () => void // ouvre un dialog
-
-
+  //changeDeviceView: (id: number) => void
+  //openThemeSettings: () => void // ouvre un dialog
 }
