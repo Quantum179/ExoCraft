@@ -46,12 +46,13 @@
 # Text
 # Quote (extends Text)
 # Title (extends Text)
+# Link (extends Text)
+  - href
 # Table
 # Table-row
 # Button
   - click event (all blocks can have clicks)
-# Link (extends Text)
-  - href
+# Icon Button (extends Button)
 # Dialog
 # Snackbar 
 # Toolbar
@@ -59,12 +60,12 @@
 # Input
 # Checkbox (extends Input)
 # Dropdown (extends Input)
-# Icon
-
 # Image
-## methods
-  - browse
-# Video
+# Icon (extends Image ?)
 # Carousel
-# Audio
+# Video Player
+# Audio Player
 # Media Player (can play video and audio)
+# Panel
+# Card (extends Panel)
+# Popup (extends Panel)
