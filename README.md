@@ -36,7 +36,8 @@ ExoCraft est un éditeur orienté cloud qui se base sur TerraformUI et Redux. Le
 - css layout : http://book.mixu.net/css/5-tricks.html
 - https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/
 https://pixabay.com/images/search/galaxy/
-
+- https://www.blogduwebdesign.com/
+- https://tympanus.net/codrops/
 # Community Version
 
 Version gratuite qui permet de concevoir son site en un éclair (tutorial inclus). Les utilisateurs pourront publier leurs créations sur les serveurs internes de ExoCraft (et ExoSoft) mais devoir s'abonner pour une mise en ligne plus élaborée. La version Community offre un large champ d'accès pour les habitués du WYSIWYG (What You See Is What You Get). La version Alpha contiendra 1 template de test.
